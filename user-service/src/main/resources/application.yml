@@ -19,6 +19,7 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create
+
     show-sql: true
     generate-ddl: true
     defer-datasource-initialization: true
