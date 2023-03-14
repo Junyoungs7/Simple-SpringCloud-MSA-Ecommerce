@@ -25,6 +25,11 @@ spring:
           predicates:
             - Path=/user-service/**
           filters:
+        - id: catalog-service
+          uri: lb://CATALOG-SERVICE
+          predicates:
+            - Path=/catalog-service/**
+          filters:
         - id: first-service
           uri: lb://FIRST-SERVICE
           predicates:
